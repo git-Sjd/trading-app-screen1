@@ -6,6 +6,7 @@ module.exports = {
     extend: {},
     fontFamily: {
       hind: ["Hind Guntur", "sans-serif"],
+      futur: []
     }
   },
   variants: {
