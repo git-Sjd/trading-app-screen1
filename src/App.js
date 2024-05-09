@@ -17,15 +17,42 @@ function App() {
   }]
 
 
-  const data = {
+  const data1 = {
     plan: 'Growth',
     riskometer: 'High',
-    ExpenseRatio: '1.34',
+    ExpenseRatio: '1.34%',
     FundSize: '939.54'
   }
 
 
-  const config = [
+  const config1 = [
+    {
+      label: 'Plan',
+      key: 'plan'
+    },
+    {
+      label: 'Riskometer',
+      key: 'riskometer'
+    },
+    {
+      label: 'Expense Ratio',
+      key: 'ExpenseRatio'
+    },
+    {
+      label: 'Fund Size',
+      key: 'FundSize'
+    }
+  ]
+
+  const data2 = {
+    plan: 'Index Fund',
+    riskometer: 'Medium',
+    ExpenseRatio: '2.13%',
+    FundSize: '1039.54'
+  }
+
+
+  const config2 = [
     {
       label: 'Plan',
       key: 'plan'
@@ -45,15 +72,17 @@ function App() {
   ]
 
 
+
   return (
 
-    <div>
+    <div className='space-y-10'>
       {/* <NewChart /> */}
       {/* <AssetAllocation title={headingData[0].title} desc={headingData[0].description} /> */}
       {/* <AssetAllocation title={headingData[1].title} desc={headingData[1].description} /> */}
       {/* <EquityGraph /> */}
       {/* <Practice /> */}
-      <KeyRatios data={data} config={config} />
+      <KeyRatios data={data1} config={config1} />
+      <KeyRatios data={data2} config={config2} />
     </div>
   );
 }
