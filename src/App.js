@@ -80,7 +80,7 @@ function App() {
       {/* <AssetAllocation title={headingData[0].title} desc={headingData[0].description} /> */}
       {/* <AssetAllocation title={headingData[1].title} desc={headingData[1].description} /> */}
       {/* <EquityGraph /> */}
-      {/* <Practice /> */}
+
       <KeyRatios data={data1} config={config1} />
       <KeyRatios data={data2} config={config2} />
     </div>
