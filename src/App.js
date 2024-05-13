@@ -3,7 +3,6 @@ import './App.css';
 import NewChart from './components/NewChart';
 import AssetAllocation from './components/AssetAllocation';
 import EquityGraph from './components/EquityGraph';
-import Practice from './components/Practice';
 import KeyRatios from './components/KeyRatios';
 
 function App() {

@@ -9,15 +9,12 @@ function KeyRatios({ data, config }) {
                 return (<>
                     {/* {(id > 0) && (<div className='mt-10' style={{ backgroundColor: '#92B2D7', width: '1px', height: '60px' }}></div>)} */}
                     <div className='py-10'>
-                        <div className='text-2xl font-normal font-hind'>{item.label}</div>
-                        <div className='font-medium text-2xl'>
+                        <div className='text-2xl font-normal font-hind text-white'>{item.label}</div>
+                        <div className='font-medium text-2xl text-white'>
                             {data[item.key]}
                         </div>
                     </div>
                     {(id <= config.length - 2) ? (<div className='mt-10' style={{ backgroundColor: '#92B2D7', width: '1px', height: '60px' }}></div>) : ''}
-
-
-
 
                 </>)
             })}
